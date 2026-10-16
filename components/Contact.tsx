@@ -26,17 +26,17 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-32 bg-[#0a0b1e] relative overflow-hidden">
+    <section id="contact" className="py-12 md:py-32 bg-[#0a0b1e] relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid md:grid-cols-2 gap-16">
-          <div className="space-y-12">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16">
+          <div className="space-y-6 md:space-y-12">
             <div>
-              <p className="text-indigo-400 text-sm tracking-widest uppercase font-semibold mb-4">
+              <p className="text-indigo-400 text-xs md:text-sm tracking-widest uppercase font-semibold mb-2 md:mb-4">
                 GET IN TOUCH
               </p>
-              <h2 className="text-5xl md:text-7xl font-bold text-white mb-8">
+              <h2 className="text-3xl md:text-7xl font-bold text-white mb-4 md:mb-8">
                 Let&apos;s Work
                 <br />
                 <span className="gradient-text">Together</span>
@@ -44,14 +44,14 @@ export default function Contact() {
               <div className="w-20 h-1 bg-indigo-500"></div>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               <a
                 href="mailto:jplim2022@gmail.com"
-                className="flex items-start space-x-4 group cursor-pointer"
+                className="flex items-start space-x-3 md:space-x-4 group cursor-pointer"
               >
-                <div className="glass p-3 rounded-lg group-hover:bg-white/10 transition-all">
+                <div className="glass p-2 md:p-3 rounded-lg group-hover:bg-white/10 transition-all">
                   <svg
-                    className="w-6 h-6 text-indigo-400"
+                    className="w-5 h-5 md:w-6 md:h-6 text-indigo-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -65,8 +65,8 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-1">Email</h4>
-                  <p className="text-gray-400 hover:text-indigo-400 transition-colors">
+                  <h4 className="font-semibold text-white mb-1 text-sm md:text-base">Email</h4>
+                  <p className="text-gray-400 hover:text-indigo-400 transition-colors text-xs md:text-base">
                     jplim2022@gmail.com
                   </p>
                 </div>
@@ -74,11 +74,11 @@ export default function Contact() {
 
               <a
                 href="tel:+639300916443"
-                className="flex items-start space-x-4 group cursor-pointer"
+                className="flex items-start space-x-3 md:space-x-4 group cursor-pointer"
               >
-                <div className="glass p-3 rounded-lg group-hover:bg-white/10 transition-all">
+                <div className="glass p-2 md:p-3 rounded-lg group-hover:bg-white/10 transition-all">
                   <svg
-                    className="w-6 h-6 text-indigo-400"
+                    className="w-5 h-5 md:w-6 md:h-6 text-indigo-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -92,17 +92,17 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-1">Phone</h4>
-                  <p className="text-gray-400 hover:text-indigo-400 transition-colors">
+                  <h4 className="font-semibold text-white mb-1 text-sm md:text-base">Phone</h4>
+                  <p className="text-gray-400 hover:text-indigo-400 transition-colors text-xs md:text-base">
                     +63 930 091 6443
                   </p>
                 </div>
               </a>
 
-              <div className="flex items-start space-x-4">
-                <div className="glass p-3 rounded-lg">
+              <div className="flex items-start space-x-3 md:space-x-4">
+                <div className="glass p-2 md:p-3 rounded-lg">
                   <svg
-                    className="w-6 h-6 text-indigo-400"
+                    className="w-5 h-5 md:w-6 md:h-6 text-indigo-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -122,21 +122,21 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-white mb-1">Location</h4>
-                  <p className="text-gray-400">Dasmariñas, Cavite, Philippines</p>
+                  <h4 className="font-semibold text-white mb-1 text-sm md:text-base">Location</h4>
+                  <p className="text-gray-400 text-xs md:text-base">Dasmariñas, Cavite, Philippines</p>
                 </div>
               </div>
             </div>
 
-            <div className="flex space-x-4 pt-8">
+            <div className="flex space-x-3 md:space-x-4 pt-4 md:pt-8">
               <a
                 href="https://github.com"
-                className="glass p-4 rounded-lg hover:bg-white/10 transition-all group"
+                className="glass p-3 md:p-4 rounded-lg hover:bg-white/10 transition-all group"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg
-                  className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"
+                  className="w-5 h-5 md:w-6 md:h-6 text-gray-400 group-hover:text-white transition-colors"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -145,12 +145,12 @@ export default function Contact() {
               </a>
               <a
                 href="https://linkedin.com"
-                className="glass p-4 rounded-lg hover:bg-white/10 transition-all group"
+                className="glass p-3 md:p-4 rounded-lg hover:bg-white/10 transition-all group"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <svg
-                  className="w-6 h-6 text-gray-400 group-hover:text-white transition-colors"
+                  className="w-5 h-5 md:w-6 md:h-6 text-gray-400 group-hover:text-white transition-colors"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -160,12 +160,12 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="glass p-8 rounded-2xl">
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="glass p-6 md:p-8 rounded-2xl">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-300 mb-2"
+                  className="block text-xs md:text-sm font-medium text-gray-300 mb-2"
                 >
                   Name
                 </label>
@@ -176,7 +176,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white placeholder-gray-500"
+                  className="w-full px-3 py-2 md:px-4 md:py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white placeholder-gray-500 text-sm md:text-base"
                   placeholder="Your Name"
                 />
               </div>
@@ -184,7 +184,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-300 mb-2"
+                  className="block text-xs md:text-sm font-medium text-gray-300 mb-2"
                 >
                   Email
                 </label>
@@ -195,7 +195,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white placeholder-gray-500"
+                  className="w-full px-3 py-2 md:px-4 md:py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white placeholder-gray-500 text-sm md:text-base"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -203,7 +203,7 @@ export default function Contact() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-300 mb-2"
+                  className="block text-xs md:text-sm font-medium text-gray-300 mb-2"
                 >
                   Message
                 </label>
@@ -213,15 +213,15 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows={5}
-                  className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white placeholder-gray-500 resize-none"
+                  rows={4}
+                  className="w-full px-3 py-2 md:px-4 md:py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-white placeholder-gray-500 resize-none text-sm md:text-base"
                   placeholder="Your message here..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200 font-semibold uppercase tracking-wide"
+                className="w-full px-6 py-3 md:px-8 md:py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 duration-200 font-semibold uppercase tracking-wide text-sm md:text-base"
               >
                 Send Message
               </button>

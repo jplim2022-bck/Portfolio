@@ -2,38 +2,38 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#05060f] text-white py-12 border-t border-white/5">
+    <footer className="bg-[#05060f] text-white py-8 md:py-12 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-center md:text-left">
-            <p className="text-2xl font-bold gradient-text mb-2">&lt;JPL/&gt;</p>
-            <p className="text-gray-400 text-sm">
+            <p className="text-xl md:text-2xl font-bold gradient-text mb-2">&lt;JPL/&gt;</p>
+            <p className="text-gray-400 text-xs md:text-sm">
               IT Professional | Virtual Assistant | Data Management Specialist
             </p>
           </div>
 
-          <div className="flex space-x-6">
+          <div className="flex flex-wrap justify-center gap-4 md:space-x-6">
             <a
               href="#home"
-              className="text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wide"
+              className="text-gray-400 hover:text-white transition-colors text-xs md:text-sm uppercase tracking-wide"
             >
               About
             </a>
             <a
               href="#skills"
-              className="text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wide"
+              className="text-gray-400 hover:text-white transition-colors text-xs md:text-sm uppercase tracking-wide"
             >
               Skills
             </a>
             <a
               href="#projects"
-              className="text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wide"
+              className="text-gray-400 hover:text-white transition-colors text-xs md:text-sm uppercase tracking-wide"
             >
               Work
             </a>
             <a
               href="#contact"
-              className="text-gray-400 hover:text-white transition-colors text-sm uppercase tracking-wide"
+              className="text-gray-400 hover:text-white transition-colors text-xs md:text-sm uppercase tracking-wide"
             >
               Contact
             </a>
@@ -63,8 +63,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/5 mt-8 pt-8 text-center">
-          <p className="text-gray-500 text-sm">
+        <div className="border-t border-white/5 mt-6 md:mt-8 pt-6 md:pt-8 text-center">
+          <p className="text-gray-500 text-xs md:text-sm">
             © {currentYear} John Patrick Lim. All rights reserved.
           </p>
         </div>

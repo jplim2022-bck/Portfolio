@@ -43,42 +43,42 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-32 bg-[#0a0b1e] relative overflow-hidden">
+    <section id="skills" className="py-12 md:py-32 bg-[#0a0b1e] relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="mb-20">
-          <p className="text-indigo-400 text-sm tracking-widest uppercase font-semibold mb-4">
+        <div className="mb-8 md:mb-20">
+          <p className="text-indigo-400 text-xs md:text-sm tracking-widest uppercase font-semibold mb-2 md:mb-4">
             WHAT I CAN BUILD WITH YOU
           </p>
-          <h2 className="text-5xl md:text-7xl font-bold text-white mb-8">
+          <h2 className="text-3xl md:text-7xl font-bold text-white mb-4 md:mb-8">
             Services
           </h2>
           <div className="w-20 h-1 bg-indigo-500"></div>
         </div>
 
-        <div className="mb-16 max-w-2xl">
-          <p className="text-gray-300 text-lg leading-relaxed">
+        <div className="mb-8 md:mb-16 max-w-2xl">
+          <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
             From an early idea to a complete digital product, I create solutions shaped
             around the problem—not a generic template.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="glass p-8 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-pointer"
+              className="glass p-5 md:p-8 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-pointer"
             >
-              <div className="mb-6 text-indigo-400 group-hover:text-indigo-300 transition-colors">
+              <div className="mb-4 md:mb-6 text-indigo-400 group-hover:text-indigo-300 transition-colors">
                 {service.icon}
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">
+              <h3 className="text-base md:text-xl font-bold text-white mb-2 md:mb-4">
                 {service.title}
               </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
+              <p className="text-gray-400 text-xs md:text-sm leading-relaxed">
                 {service.description}
               </p>
             </div>
