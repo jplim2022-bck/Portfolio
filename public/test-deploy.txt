@@ -1,0 +1,2 @@
+This file was created at 2026-10-16 to verify deployment is working.
+If you can see this file at https://jpl-portfolio.vercel.app/test-deploy.txt then deployment is updated.
