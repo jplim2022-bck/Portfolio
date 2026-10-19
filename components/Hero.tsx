@@ -39,6 +39,17 @@ export default function Hero() {
                 operations. Skilled in maintaining accurate records, organizing operational information, 
                 and using digital tools and AI-assisted workflows to support efficiency.
               </p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                <span className="px-3 py-1 bg-indigo-500/20 text-indigo-300 rounded-full text-xs font-semibold">
+                  Remote Ready
+                </span>
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs font-semibold">
+                  AI-Powered
+                </span>
+                <span className="px-3 py-1 bg-pink-500/20 text-pink-300 rounded-full text-xs font-semibold">
+                  Detail-Oriented
+                </span>
+              </div>
             </div>
           </div>
 
