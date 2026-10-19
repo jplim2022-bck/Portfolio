@@ -6,29 +6,9 @@ export default function Skills() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
         </svg>
       ),
-      title: "Data Management",
+      title: "Business Operations",
       description:
-        "Expert in high-volume data entry, verification, and spreadsheet management. Proficient in Excel, Google Sheets, and database systems with strong attention to detail.",
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-        </svg>
-      ),
-      title: "Web Development",
-      description:
-        "Responsive, accessible and reliable web experiences with modern interfaces and dependable backend architecture using Next.js, React, and TypeScript.",
-    },
-    {
-      icon: (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-        </svg>
-      ),
-      title: "Virtual Assistance",
-      description:
-        "Remote administrative and operations support with expertise in ticket management, event research, inventory tracking, and record keeping.",
+        "Data management, inventory tracking, recordkeeping, online research, data verification, spreadsheet management, task coordination, and process improvement with strong attention to detail.",
     },
     {
       icon: (
@@ -36,9 +16,29 @@ export default function Skills() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
         </svg>
       ),
-      title: "Process Automation",
+      title: "AI & Automation",
       description:
-        "Practical intelligent features and automations that improve decisions, simplify complex work, and create real value through efficient workflows.",
+        "AI-assisted development using ChatGPT, Claude, and Google Gemini for code implementation, debugging, refactoring, documentation, and workflow optimization.",
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+        </svg>
+      ),
+      title: "Administrative Support",
+      description:
+        "Remote operations and task management with expertise in maintaining organized records, meeting deadlines, and coordinating multiple responsibilities independently.",
+    },
+    {
+      icon: (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+        </svg>
+      ),
+      title: "Technical Skills",
+      description:
+        "React.js, TypeScript, Next.js, Node.js, Laravel, Flutter, .NET, Supabase, SQL, Database Management, Git, Linux, software troubleshooting, and testing.",
     },
   ];
 

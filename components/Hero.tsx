@@ -19,27 +19,25 @@ export default function Hero() {
                 Hi, I&apos;m
               </p>
               <h1 className="text-4xl sm:text-5xl md:text-8xl font-bold text-white leading-tight">
-                John
+                John Patrick
                 <br />
-                <span className="gradient-text">Patrick Lim</span>
+                <span className="gradient-text">D. Lim</span>
               </h1>
             </div>
 
             <div className="inline-block px-4 py-2 md:px-6 md:py-3 glass rounded-full">
               <p className="text-white font-semibold text-sm md:text-base">
-                IT Professional & Virtual Assistant
+                AI, Administrative & Business Operations Specialist
               </p>
             </div>
 
             <div className="glass p-4 md:p-6 rounded-2xl space-y-2 md:space-y-4 max-w-md">
-              <h3 className="text-white font-bold text-base md:text-lg">PROFILE</h3>
-              <h4 className="text-indigo-400 font-semibold text-sm md:text-base">What I bring</h4>
+              <h3 className="text-white font-bold text-base md:text-lg">PROFESSIONAL SUMMARY</h3>
               <p className="text-gray-300 text-xs md:text-sm leading-relaxed">
-                Virtual Assistant with 4 years of remote experience supporting U.S.-based 
-                concert operations through ticket purchasing, inventory tracking, event research, 
-                and high-volume data management. Skilled in maintaining accurate records, verifying 
-                event information, organizing spreadsheets, and managing multiple tasks independently 
-                while meeting deadlines.
+                Virtual Assistant and Business Operations professional with 4 years of remote work 
+                experience in data management, inventory tracking, online research, and administrative 
+                operations. Skilled in maintaining accurate records, organizing operational information, 
+                and using digital tools and AI-assisted workflows to support efficiency.
               </p>
             </div>
           </div>

@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <p className="text-xl md:text-2xl font-bold gradient-text mb-2">&lt;JPL/&gt;</p>
             <p className="text-gray-400 text-xs md:text-sm">
-              IT Professional | Virtual Assistant | Data Management Specialist
+              AI Tools | Administrative Support | Operation Management
             </p>
           </div>
 
