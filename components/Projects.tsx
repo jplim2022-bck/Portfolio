@@ -1,12 +1,23 @@
 export default function Projects() {
   const projects = [
     {
+      title: "AI Project",
+      description:
+        "AI-assisted development and automation project showcasing practical applications of AI tools in business operations and workflow optimization.",
+      link: "https://drive.google.com/drive/folders/1i9OO1w9wZsclj-80E2hAPUWzIG2cWcEx?usp=sharing",
+      videoUrl: "", // Will add video embed when direct file link is provided
+      tags: ["AI Tools", "ChatGPT", "Claude", "Automation", "Development"],
+      featured: true,
+      hasVideo: false, // Set to true when video link is ready
+    },
+    {
       title: "Cognitive Assessment App",
       description:
         "An interactive cognitive assessment application designed to evaluate and track cognitive abilities through various testing modules and analytics.",
       link: "https://cogapp.vercel.app/",
       tags: ["Next.js", "React", "TypeScript", "Vercel"],
-      featured: true,
+      featured: false,
+      hasVideo: false,
     },
   ];
 
@@ -22,28 +33,26 @@ export default function Projects() {
             MY WORK
           </p>
           <h2 className="text-3xl md:text-7xl font-bold text-white mb-4 md:mb-8">
-            Featured Project
+            Featured Projects
           </h2>
           <div className="w-20 h-1 bg-indigo-500"></div>
         </div>
 
         <div className="mb-8 md:mb-16 max-w-2xl">
           <p className="text-gray-300 text-sm md:text-lg leading-relaxed">
-            A showcase of my recent work in web development and application design.
+            A showcase of my recent work in AI-assisted development and application design.
           </p>
         </div>
 
         <div className="grid gap-6 md:gap-8">
           {projects.map((project, index) => (
-            <a
+            <div
               key={index}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="glass p-6 md:p-12 rounded-2xl hover:bg-white/10 transition-all duration-300 group cursor-pointer"
+              className="glass p-6 md:p-12 rounded-2xl hover:bg-white/10 transition-all duration-300 group"
             >
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 md:gap-8">
-                <div className="flex-1 space-y-3 md:space-y-6">
+              <div className="flex flex-col gap-6 md:gap-8">
+                {/* Project Info */}
+                <div className="space-y-3 md:space-y-6">
                   {project.featured && (
                     <span className="inline-block px-3 py-1 md:px-4 md:py-1 bg-indigo-500/20 text-indigo-400 rounded-full text-xs font-semibold uppercase tracking-wider">
                       Featured Project
@@ -54,7 +63,7 @@ export default function Projects() {
                     {project.title}
                   </h3>
                   
-                  <p className="text-gray-400 text-sm md:text-lg leading-relaxed max-w-2xl">
+                  <p className="text-gray-400 text-sm md:text-lg leading-relaxed">
                     {project.description}
                   </p>
 
@@ -68,27 +77,34 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-
-                  <div className="flex items-center space-x-2 text-indigo-400 font-semibold group-hover:translate-x-2 transition-transform text-sm md:text-base">
-                    <span>VIEW PROJECT</span>
-                    <svg
-                      className="w-4 h-4 md:w-5 md:h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </div>
                 </div>
 
-                <div className="flex-shrink-0">
-                  <div className="w-full md:w-64 h-36 md:h-48 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-xl flex items-center justify-center group-hover:from-indigo-500/30 group-hover:to-purple-500/30 transition-all">
+                {/* Video or Image */}
+                {project.hasVideo && project.videoUrl ? (
+                  <div className="w-full rounded-xl overflow-hidden bg-black/50">
+                    {/* For YouTube: Replace the video tag with iframe */}
+                    {project.videoUrl.includes('youtube.com') || project.videoUrl.includes('youtu.be') ? (
+                      <iframe
+                        className="w-full aspect-video"
+                        src={project.videoUrl.replace('watch?v=', 'embed/')}
+                        title={project.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    ) : (
+                      // For local video files
+                      <video
+                        className="w-full aspect-video"
+                        controls
+                        poster="/images/video-thumbnail.jpg" // Optional: add thumbnail
+                      >
+                        <source src={project.videoUrl} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    )}
+                  </div>
+                ) : (
+                  <div className="w-full h-48 md:h-64 bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-xl flex items-center justify-center group-hover:from-indigo-500/30 group-hover:to-purple-500/30 transition-all">
                     <div className="text-center">
                       <svg
                         className="w-12 h-12 md:w-16 md:h-16 text-indigo-400 mx-auto mb-2"
@@ -103,12 +119,37 @@ export default function Projects() {
                           d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
                         />
                       </svg>
-                      <p className="text-gray-400 text-xs md:text-sm">Cognitive App</p>
+                      <p className="text-gray-400 text-xs md:text-sm">Application Preview</p>
                     </div>
                   </div>
-                </div>
+                )}
+
+                {/* View Project Link */}
+                {project.link !== '#' && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-indigo-400 font-semibold hover:translate-x-2 transition-transform text-sm md:text-base w-fit"
+                  >
+                    <span>VIEW PROJECT</span>
+                    <svg
+                      className="w-4 h-4 md:w-5 md:h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                      />
+                    </svg>
+                  </a>
+                )}
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
