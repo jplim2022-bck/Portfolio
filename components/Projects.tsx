@@ -5,19 +5,18 @@ export default function Projects() {
       description:
         "AI-assisted development and automation project showcasing practical applications of AI tools in business operations and workflow optimization.",
       link: "https://drive.google.com/drive/folders/1i9OO1w9wZsclj-80E2hAPUWzIG2cWcEx?usp=sharing",
-      videoUrl: "", // Will add video embed when direct file link is provided
+      images: ["/images/ai-project-1.jpg", "/images/ai-project-2.jpg"], // Multiple preview images
       tags: ["AI Tools", "ChatGPT", "Claude", "Automation", "Development"],
       featured: true,
-      hasVideo: false, // Set to true when video link is ready
     },
     {
       title: "Cognitive Assessment App",
       description:
         "An interactive cognitive assessment application designed to evaluate and track cognitive abilities through various testing modules and analytics.",
       link: "https://cogapp.vercel.app/",
+      images: ["/images/cog-project.jpg"],
       tags: ["Next.js", "React", "TypeScript", "Vercel"],
       featured: false,
-      hasVideo: false,
     },
   ];
 
@@ -79,28 +78,28 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Video or Image */}
-                {project.hasVideo && project.videoUrl ? (
+                {/* Images or Video */}
+                {project.images && project.images.length > 0 ? (
                   <div className="w-full rounded-xl overflow-hidden bg-black/50">
-                    {/* For YouTube: Replace the video tag with iframe */}
-                    {project.videoUrl.includes('youtube.com') || project.videoUrl.includes('youtu.be') ? (
-                      <iframe
-                        className="w-full aspect-video"
-                        src={project.videoUrl.replace('watch?v=', 'embed/')}
-                        title={project.title}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
+                    {project.images.length === 1 ? (
+                      // Single image
+                      <img
+                        src={project.images[0]}
+                        alt={project.title}
+                        className="w-full h-auto object-cover"
                       />
                     ) : (
-                      // For local video files
-                      <video
-                        className="w-full aspect-video"
-                        controls
-                        poster="/images/video-thumbnail.jpg" // Optional: add thumbnail
-                      >
-                        <source src={project.videoUrl} type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
+                      // Multiple images - grid layout
+                      <div className="grid grid-cols-2 gap-2 p-2">
+                        {project.images.map((img, imgIndex) => (
+                          <img
+                            key={imgIndex}
+                            src={img}
+                            alt={`${project.title} preview ${imgIndex + 1}`}
+                            className="w-full h-auto object-cover rounded-lg"
+                          />
+                        ))}
+                      </div>
                     )}
                   </div>
                 ) : (
