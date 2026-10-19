@@ -100,7 +100,7 @@ export default function WhyChooseMe() {
               Ready to Work Together?
             </h3>
             <p className="text-gray-300 mb-6 md:mb-8 text-sm md:text-lg">
-              Let's discuss how I can help streamline your operations and boost productivity
+              Let&apos;s discuss how I can help streamline your operations and boost productivity
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Projects() {
   const projects = [
     {
@@ -83,19 +85,23 @@ export default function Projects() {
                   <div className="w-full rounded-xl overflow-hidden bg-black/50">
                     {project.images.length === 1 ? (
                       // Single image
-                      <img
+                      <Image
                         src={project.images[0]}
                         alt={project.title}
+                        width={800}
+                        height={600}
                         className="w-full h-auto object-cover"
                       />
                     ) : (
                       // Multiple images - grid layout
                       <div className="grid grid-cols-2 gap-2 p-2">
                         {project.images.map((img, imgIndex) => (
-                          <img
+                          <Image
                             key={imgIndex}
                             src={img}
                             alt={`${project.title} preview ${imgIndex + 1}`}
+                            width={400}
+                            height={300}
                             className="w-full h-auto object-cover rounded-lg"
                           />
                         ))}
