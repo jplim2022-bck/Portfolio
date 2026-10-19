@@ -12,11 +12,11 @@ export default function Projects() {
     {
       title: "Cognitive Assessment App",
       description:
-        "An interactive cognitive assessment application designed to evaluate and track cognitive abilities through various testing modules and analytics.",
+        "A comprehensive web-based cognitive assessment platform designed to evaluate and track cognitive abilities through interactive testing modules, real-time analytics, and detailed performance reports.",
       link: "https://cogapp.vercel.app/",
       images: ["/images/cog-project.jpg"],
-      tags: ["Next.js", "React", "TypeScript", "Vercel"],
-      featured: false,
+      tags: ["Next.js", "React", "TypeScript", "Supabase", "Web App"],
+      featured: true,
     },
   ];
 
