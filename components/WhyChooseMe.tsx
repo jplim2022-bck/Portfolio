@@ -109,15 +109,6 @@ export default function WhyChooseMe() {
               >
                 Get in Touch
               </a>
-              <a
-                href="/resume.pdf"
-                className="px-6 py-3 md:px-8 md:py-4 glass text-white rounded-lg hover:bg-white/10 transition-all font-semibold text-sm md:text-base flex items-center justify-center space-x-2"
-              >
-                <span>Download Resume</span>
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
-                </svg>
-              </a>
             </div>
           </div>
         </div>
